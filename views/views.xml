@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+    <record id="view_bidcom_state_property_form_extension" model="ir.ui.view">
+      <field name="name">bidcom.state.property.form.extension_page</field>
+      <field name="model">bidcom_state_property</field>
+      <field name="inherit_id" ref="regionalizacion.view_bidcom_state_property_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='extension_page']/div[@name='extension_hook']" position="inside">
+          <group>
+            <field name="invoice_id" placeholder="Ingrese una nota adicional..." />
+          </group>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo> 
